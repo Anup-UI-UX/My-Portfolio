@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(151)Naresh i Technologies</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <style>
+        header
+        {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+            margin-left: 5px;
+            margin-right: 5px;
+            font-size: 25px;
+            font-family: Arial;
+            color: gray;
+        }
+        .search-area
+        {
+           display: flex;
+        }
+        .search-bar
+        {
+            border: 1px solid gray;
+            border-radius: 30px;
+            width: 550px;
+            color: gray;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 20px;
+            padding-top: 10px;
+        }
+        .bi-mic-fill
+        {
+            margin-left: 25px;
+            color: white;
+        }
+        .shortcut-area span
+        {
+            margin-right: 15px;
+            color: white;
+        }
+        .videos-left
+        {
+            font-size: 10px;
+            background-color: red;
+            color: white;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+            border-radius: 15px;
+            padding: 3px;
+            position: absolute;
+            top: -10px;
+            right: 25px;
+        }
+        .bi-bell
+        {
+            position: relative;
+        }
+        .profile-pic
+        {
+            border: 1px solid black;
+            border-radius: 30px;
+        }
+        section
+        {
+            display: grid;
+            grid-template-columns: 1.5fr 10.5fr;
+            color: white;
+        }
+        section nav
+        {
+            margin-top: 15px;
+            position: sticky;
+            margin-left: 15px;
+        }
+        .items, .items1, .items2
+        {
+            line-height: 45px;
+            border-bottom: 1px solid gray;
+        }
+        article
+        {
+            display: grid;
+            grid-template-columns: 10fr 2fr;
+            margin-top: 25px;
+            margin-left: 100px;
+            margin-right: 55px;
+            font-family: Arial;
+            height: 200px;
+            border-bottom: 1px solid gray;
+        }
+        .brandlogo img
+        {
+            border-radius: 120px;
+            margin-right: 20px;
+        }
+        .title
+        {
+            font-size: 25px;
+            font-family: Arial;
+            margin-bottom: 15px;
+        }
+        .sub-title
+        {
+            font-size: 15px;
+            font-family: Arial;
+            margin-bottom: 15px;
+        }
+        .text
+        {
+            font-size: 15px;
+            font-family: Arial;
+            margin-bottom: 15px;
+        }
+        div a
+        {
+            margin-bottom: 5px;
+            text-decoration: none;
+        }
+        .subscribe
+        {
+            border: 1px solid #222;
+            background-color: #222;
+            border-radius: 15px;
+            height: 28px;
+            width: 130px;
+            justify-content: center;
+            align-items: center;
+        }
+        .cat 
+        {
+          color: gray;
+          text-transform: uppercase;
+          font-size: 15px;
+          word-spacing: 48px;
+          margin-left: 20px;
+        }
+        .videos
+        {
+            margin-top: 10px;
+            margin-bottom: -80px;
+            padding: 95px;
+            font-size: 18px;            
+        }
+        .thumbnails
+        {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            grid-gap: 4px;
+            width: 500px;
+            padding-left: 95px;
+        }
+        iframe
+        {
+            width: 200px;
+            height: 150px;
+            border: none;
+        }
+        .text-title
+        {
+            font-size: 15px;
+            font-weight: bolder;
+        }
+        .text-sub-title
+        {
+            font-size: 13px;
+        }
+    </style>
+</head>
+<body class="container-fluid bg-black">
+    <header>
+        <div>
+            <span class="bi bi-justify"></span>
+            <img src="./image/newyoutubelogo.jpg" width="100px">
+        </div>
+        <div class="search-area">
+            <div class="search-bar">
+                <span>Search</span>
+                <span class="bi bi-search"></span>
+            </div>
+            <span class="bi bi-mic-fill"></span>
+        </div>
+        <div class="shortcut-area">
+            <span class="bi bi-camera-video"></span>
+            <span class="bi bi-bell"><span class="videos-left">9+</span>
+            <img class="profile-pic" src="./image/profilepic.jpg" height="40px" width="40px">
+        </div>
+    </header>
+    <section>
+        <nav>
+            <div class="items">
+                <div class="bi bi-house-door">
+                    <span>Home</span>
+                </div>
+                <div class="bi bi-film">
+                    <span>Shorts</span>
+                </div>
+                <div class="bi bi-collection-play">
+                    <span>Subscription</span>
+                </div>
+            </div>
+            <div class="items1">
+                <div class="bi bi-play-btn">
+                    <span>Library</span>
+                </div>
+                <div class="bi bi-clock-history">
+                    <span>History</span>
+                </div>
+                <div class="bi bi-play-circle">
+                    <span>Your Videos</span>
+                </div>
+                <div class="bi bi-clock">
+                    <span>Watch Later</span>
+                </div>
+                <div class="bi bi-hand-thumbs-up">
+                    <span>Liked Videos</span>
+                </div>
+                <div class="bi bi-chevron-down">
+                    <span>Show more</span>
+                </div>
+            </div>
+            <div class="items2">
+                    <span>Subscription</span>
+                <div class="bi bi-clock-history">
+                    <span>History</span>
+                </div>
+                <div class="bi bi-play-circle">
+                    <span>Your Videos</span>
+                </div>
+                <div class="bi bi-clock">
+                    <span>Watch Later</span>
+                </div>
+                <div class="bi bi-hand-thumbs-up">
+                    <span>Liked Videos</span>
+                </div>
+                <div class="bi bi-chevron-down">
+                    <span>Show more</span>
+                </div>
+            </div>
+        </nav>
+        <main>
+            <div>
+            <img src="./image/nareshbanner.jpg" width="100%">
+            </div>
+            <article>
+            <div>
+                <div class="brandlogo"><img src="./image/nareshitlogo.jpg" height="120px" width="120px" align="left"></div>
+                <div class="brand">
+                <div class="title">Naresh i Technologies</div>
+                <div class="sub-title">@NareshIT1.19M subscribers2.8K videos</div>
+                <div class="text">We are one of the India's largest software training organization and an Top... <span class="bi bi-chevron-right"></span></div>
+                <div><a href="instagram.com/nareshitech">instagram.com/nareshitech</a> and 7 more links</div></div>
+            </div>
+            <div class="subscribe">
+                <span class="bi bi-bell"></span>
+                <span>Subscribed</span>
+                <span class="bi bi-chevron-down"></span>
+            </div>
+            <div class="cat">
+                <span>Home</span>
+                <span>Videos</span>
+                <span>Shorts</span>
+                <span>Live</span>
+                <span>Playlists</span>
+                <span>Community</span>
+                <span>Channels</span>
+                <span>About</span>
+                <span class="bi bi-chevron-right"></span>
+            </div>
+            </article>
+            <div class="videos">
+                <span>Videos</span>
+                <span class="bi bi-play-fill"></span>
+                <span>Play all</span>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                    <p class="text-title">Full Stack Data Science & AI with Azure & Power BI |... </p>
+                    <p class="text-sub-title">3.2K views . 8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                    <p class="text-title">UI Full Stack Web Development Training |... </p>
+                    <p class="text-sub-title">2K views9 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                    <p class="text-title">UI Full Stack Web Development Training |... </p>
+                    <p class="text-sub-title">2K views9 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                    <p class="text-title">UI Full Stack Web Development Training |... </p>
+                    <p class="text-sub-title">2K views9 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                    <p class="text-title">UI Full Stack Web Development Training |... </p>
+                    <p class="text-sub-title">2K views9 days ago</p>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                    <p>Full Stack Data Science & AI with Azure & Power BI | NareshIT #datascience
+                        3.2K views8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                    <p>Full Stack Data Science & AI with Azure & Power BI | NareshIT #datascience
+                        3.2K views8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                </div>
+            </div>
+            <div class="thumbnails">
+                <div>
+                    <iframe src="https://www.youtube.com/embed/Ft-v5aLDWqc"></iframe>
+                    <p>Full Stack Data Science & AI with Azure & Power BI | NareshIT #datascience
+                        3.2K views8 days ago</p>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/DeEszXEewHs"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/f5doC5v3Xd8"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/X7RNpVTemHo"></iframe>
+                </div>
+                <div>
+                    <iframe src="https://www.youtube.com/embed/tvrNm901RK8"></iframe>
+                </div>
+            </div>
+        </main>
+    </section>
+</body>
+</html>
